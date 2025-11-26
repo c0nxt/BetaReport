@@ -14,7 +14,7 @@ public record BetaCommand(BetaReport betaReport) implements CommandExecutor {
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if (sender instanceof Player) {
             StringBuilder text = new StringBuilder();
-            Arrays.stream(args).forEach(arg -> {text.append(arg).append(" ");});
+            Arrays.stream(args).forEach(x -> text.append(x).append(" "));
             try {
                 betaReport.getDiscordMessageManager().sendMessage("**" + ((Player) sender).getDisplayName() + ":** " + text);
             } catch (Exception e) {
