@@ -13,11 +13,6 @@ public final class BetaReport extends JavaPlugin {
         Objects.requireNonNull(this.getCommand("beta")).setExecutor(new BetaCommand(this));
 
     }
-
-    @Override
-    public void onDisable() {
-
-    }
     public DiscordMessageManager getDiscordMessageManager() {
         return this.discordMessageManager;
     }

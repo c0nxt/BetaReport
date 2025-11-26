@@ -42,10 +42,6 @@ public class DiscordMessageManager {
         }
 
     }
-    public String getWebhookUrl() {
-        return webhookUrl;
-    }
-
     public void setWebhookUrl(String webhookUrl) {
         this.webhookUrl = webhookUrl;
     }
