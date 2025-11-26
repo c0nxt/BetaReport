@@ -4,5 +4,5 @@ main: dev.c0nxt.betaReport.BetaReport
 api-version: '1.21'
 commands:
   beta:
-    description: igen
-    usage: /beta
+    description: this command sends a message to a discord webhook
+    usage: /beta <description of flaws in the server>
