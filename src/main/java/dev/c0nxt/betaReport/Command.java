@@ -6,7 +6,7 @@ import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
 public class Command implements CommandExecutor {
-    private BetaReport plugin;
+    final private BetaReport plugin;
 
     public Command(BetaReport plugin){
         this.plugin = plugin;
