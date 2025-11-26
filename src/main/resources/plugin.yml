@@ -1,5 +1,5 @@
 name: BetaReport
-version: '1.0-SNAPSHOT'
+version: '1.1-SNAPSHOT'
 main: dev.c0nxt.betaReport.BetaReport
 api-version: '1.21'
 commands:
