@@ -1,0 +1,8 @@
+name: BetaReport
+version: '1.0-SNAPSHOT'
+main: dev.c0nxt.betaReport.BetaReport
+api-version: '1.21'
+commands:
+  beta:
+    description: igen
+    usage: /beta
