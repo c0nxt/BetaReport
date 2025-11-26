@@ -10,7 +10,14 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public record DiscordMessageManager(String webhookUrl) {
+public class DiscordMessageManager {
+
+
+    private String webhookUrl;
+
+    public DiscordMessageManager(String webhookUrl) {
+        this.webhookUrl = webhookUrl;
+    }
 
     public void sendMessage(String message) {
         try {
@@ -35,4 +42,12 @@ public record DiscordMessageManager(String webhookUrl) {
         }
 
     }
+    public String getWebhookUrl() {
+        return webhookUrl;
+    }
+
+    public void setWebhookUrl(String webhookUrl) {
+        this.webhookUrl = webhookUrl;
+    }
+
 }

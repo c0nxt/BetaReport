@@ -16,6 +16,7 @@ public final class BetaReport extends JavaPlugin {
 
     @Override
     public void onDisable() {
+
     }
     public DiscordMessageManager getDiscordMessageManager() {
         return this.discordMessageManager;

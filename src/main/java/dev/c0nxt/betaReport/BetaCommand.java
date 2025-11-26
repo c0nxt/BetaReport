@@ -19,6 +19,9 @@ public record BetaCommand(BetaReport betaReport) implements CommandExecutor {
                     if (args[0].equalsIgnoreCase("updateLink")) {
                         betaReport.getConfig().set("discord_webhook", args[1]);
                         betaReport.saveConfig();
+                        betaReport.getDiscordMessageManager().setWebhookUrl(betaReport.getConfig().getString("discord_webhook"));
+                        sender.sendMessage(ChatColor.GREEN + "Updated link to " + args[1]);
+
                     }
                 } else if (args.length == 1) {
                     sender.sendMessage(ChatColor.RED + "Usage: /beta updateLink <discord_webhook>");
